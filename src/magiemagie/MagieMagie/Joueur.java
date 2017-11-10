@@ -13,18 +13,20 @@ import java.util.ArrayList;
  */
 public class Joueur {
     
-    protected String nom;
+    private String nom;
 
-    protected ArrayList<Carte>cartes = new ArrayList<>();
+    private ArrayList<Carte>cartes = new ArrayList<>();
     
 
     @Override
     public String toString() {
-        return this.cartes + "Nom:" + this.nom + " cartes;" + "/n";
+        return this.cartes + "Nom:" + this.nom + " cartes" + "/n";
         //To change body of generated methods, choose Tools | Templates.
     }
     
      
+    
+    
      
 
     public String getNom() {

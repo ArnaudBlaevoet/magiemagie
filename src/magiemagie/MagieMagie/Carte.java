@@ -22,10 +22,29 @@ public class Carte {
         CORNE_DE_LICORNE
         
     
-    }   
+    } 
+
+    
+    @Override
+    public boolean equals(Object obj) {
+       Carte carteParam = (Carte) obj;
+       
+       if(this.getType() == carteParam.getType()){
+        return true;
+       }
+       else{
+        return false;
+       
+       }   
+    }
+    
+       
+    
+    
     protected ArrayList<Carte>cartes;
     protected TypeCarte type;
     protected String nom;
+    
     
     
     @Override
